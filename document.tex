@@ -480,24 +480,37 @@ first 10 values
 \begin{frame}
 \frametitle{Dependency $|\hat{\mY} - \tilde{\mY}|_F$ over approximation rank
 $k$}
-
-\begin{columns}[T] % align columns
-\begin{column}{.48\textwidth}
+Let $\tilde{\mY}$ is lower rank $k$ approximation $\hat{\mY}$ of matrix $\mY$
 \begin{figure}[h] 
-    \includegraphics[width=5cm]{svd.png}
+    \includegraphics[width=8cm]{frob_500.png}
 \end{figure}
-all values
-\end{column}%
-\hfill%
-\begin{column}{.48\textwidth}
-\begin{figure}[h] 
-    \includegraphics[width=5cm]{svd_10.png}
-\end{figure}
-first 10 values
-\end{column}%
-\end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{Dependency of RMSE over approximation rank
+$k$}
+$RMSE = \sqrt{\frac{|\hat{\mY} - \tilde{\mY}|_F^2}{\hat{n} \hat{m}}}$
+\begin{figure}[h] 
+    \includegraphics[width=8cm]{rmse_500.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dependency of $R^2_{adj}$ over approximation rank $k$}
+$R_{adj}^2 = 1 - \frac{ESS / (p-q)}{TSS / (p-1)}$ where $p = \hat{n} \hat{m}$,
+ and $q = (\hat{n} + \hat{m}) \frac{k}{2}$
+\begin{figure}[h] 
+    \includegraphics[width=8cm]{radj_500.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dependency of $r = correl(\tilde{\mY}, \hat{\mY})$ over
+approximation rank $k$}
+\begin{figure}[h] 
+    \includegraphics[width=8cm]{correl_500.png}
+\end{figure}
+\end{frame}
 
 \begin{frame}[allowframebreaks]
 \bibliographystyle{ieeetr}
