@@ -206,14 +206,10 @@ q_{ij}}.
 \end{itemize}
 \end{frame}
 
-
-
-
-
-
-
-
 \begin{frame}
+\frametitle{The idea behind authority factors}
+We can treat binary matrix $\mQ$ as adjacency matrix of some bipartite graph
+$G$, which vertices are splitted in two disjoined sets $U$ and $V$.
 \begin{columns}[T] % align columns
 \begin{column}{.48\textwidth}
 \begin{figure}[h] 
@@ -234,9 +230,16 @@ q_{ij}}.
 \end{eqnarray*}
 \end{column}%
 \end{columns}
+Lets consider random walk process on graph $G$, with equal probabilities for
+each outgoing arc. 
+Thus transition from set $U$ to set $V$ can be represented in form of
+stochastic matrix $\mQ_1$ and transition from $V$ to $U$ as $\mQ_2^T$\ldots
 \end{frame}
 
 \begin{frame}
+\frametitle{The idea behind authority factors}
+Thus transition from set $U$ to set $V$ can be represented in form of
+stochastic matrix $\mQ_1$ and transition from $V$ to $U$ as $\mQ_2^T$
 \begin{columns}[T] % align columns
 \begin{column}{.48\textwidth}
 \begin{figure}[h] 
@@ -260,6 +263,9 @@ q_{ij}}.
 \end{frame}
 
 \begin{frame}
+\frametitle{The idea behind authority factors}
+Thus transition from set $U$ to set $V$ can be represented in form of
+stochastic matrix $\mQ_1$ and transition from $V$ to $U$ as $\mQ_2^T$
 \begin{columns}[T] % align columns
 \begin{column}{.48\textwidth}
 \begin{figure}[h] 
@@ -269,7 +275,7 @@ q_{ij}}.
 \hfill%
 \begin{column}{.48\textwidth}
 \begin{eqnarray*}
-\mQ_2 = \left(
+\mQ_2^T = \left(
  \begin{array}{ccc}
     \rfrac{1}{2}& \rfrac{1}{2}& 0\\
     \rfrac{1}{2}& \rfrac{1}{2}& 0\\
@@ -280,7 +286,15 @@ q_{ij}}.
 \end{eqnarray*}
 \end{column}%
 \end{columns}
+In this setting authority factors $\phi_i$ and $\tau_j$ are essentialy
+stationary probabilities for random walk process defined by
+stohastic matrices $\mQ_1\mQ_2^T$ and $\mQ_1^T\mQ_2$ respectively.
+The algoritm is very similar to one used by Google which assignes PageRank
+authority factor to each web-page in the Internet, as logarithm of stationary
+probability for random walk throw the Internet graph, defined by hyperlinks.
 \end{frame}
+
+
 
 \begin{frame}[allowframebreaks]
 \bibliographystyle{ieeetr}
@@ -291,7 +305,7 @@ q_{ij}}.
 \frametitle{}
 \framesubtitle{}
 \begin{itemize}
-  
+  \item 
 \end{itemize}
 \end{frame}
 \end{document}
