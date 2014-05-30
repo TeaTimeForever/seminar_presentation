@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.12.6)  30 MAY 2014 07:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.12.6)  30 MAY 2014 11:27
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1232,7 +1232,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.84 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1539,13 +1539,104 @@ Overfull \hbox (12.31454pt too wide) in alignment at lines 263--263
 File: DemoGraphQ2.pdf Graphic file (type pdf)
 
 <use DemoGraphQ2.pdf>
-Package pdftex.def Info: DemoGraphQ2.pdf used on input line 295.
+Package pdftex.def Info: DemoGraphQ2.pdf used on input line 291.
 (pdftex.def)             Requested size: 142.26378pt x 69.93358pt.
  [15
 
- <./DemoGraphQ2.pdf>] (./document.bbl) [16
+ <./DemoGraphQ2.pdf>] [16
 
-] [17
+]
+File: usual_grayscale_0.png Graphic file (type png)
+
+<use usual_grayscale_0.png>
+Package pdftex.def Info: usual_grayscale_0.png used on input line 326.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+<usual_grayscale_5.png, id=282, 1027.84pt x 1027.84pt>
+File: usual_grayscale_5.png Graphic file (type png)
+
+<use usual_grayscale_5.png>
+Package pdftex.def Info: usual_grayscale_5.png used on input line 326.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+Overfull \vbox (2.16946pt too high) detected at line 326
+ []
+
+[17
+
+ <./usual_grayscale_5.png>]
+File: usual_0.png Graphic file (type png)
+ <use usual_0.png>
+Package pdftex.def Info: usual_0.png used on input line 346.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+<usual_5.png, id=290, 1027.84pt x 1027.84pt>
+File: usual_5.png Graphic file (type png)
+ <use usual_5.png>
+Package pdftex.def Info: usual_5.png used on input line 346.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+Overfull \vbox (2.16946pt too high) detected at line 346
+ []
+
+[18
+
+ <./usual_5.png>]
+File: log_grayscale_0.png Graphic file (type png)
+ <use log_grayscale_0.png>
+Package pdftex.def Info: log_grayscale_0.png used on input line 367.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+<log_grayscale_5.png, id=298, 1027.84pt x 1027.84pt>
+File: log_grayscale_5.png Graphic file (type png)
+ <use log_grayscale_5.png>
+Package pdftex.def Info: log_grayscale_5.png used on input line 367.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+Overfull \vbox (2.16946pt too high) detected at line 367
+ []
+
+[19
+
+ <./log_grayscale_5.png>]
+File: log_0.png Graphic file (type png)
+ <use log_0.png>
+Package pdftex.def Info: log_0.png used on input line 388.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+<log_5.png, id=307, 1027.84pt x 1027.84pt>
+File: log_5.png Graphic file (type png)
+ <use log_5.png>
+Package pdftex.def Info: log_5.png used on input line 388.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+
+Overfull \vbox (2.16946pt too high) detected at line 388
+ []
+
+[20
+
+ <./log_5.png>] <scores_500x500.png, id=315, 501.875pt x 501.875pt>
+File: scores_500x500.png Graphic file (type png)
+
+<use scores_500x500.png>
+Package pdftex.def Info: scores_500x500.png used on input line 413.
+(pdftex.def)             Requested size: 99.58464pt x 99.58444pt.
+ <missing_500x500.png, id=316, 501.875pt x 501.875pt>
+File: missing_500x500.png Graphic file (type png)
+
+<use missing_500x500.png>
+Package pdftex.def Info: missing_500x500.png used on input line 413.
+(pdftex.def)             Requested size: 99.58464pt x 99.58444pt.
+
+Overfull \vbox (9.64098pt too high) detected at line 413
+ []
+
+[21
+
+ <./scores_500x500.png (PNG copy)> <./missing_500x500.png (PNG copy)>]
+(./document.bbl) [22
+
+] [23
 
 ]
 \tf@nav=\write6
@@ -1557,12 +1648,11 @@ Package pdftex.def Info: DemoGraphQ2.pdf used on input line 295.
 \tf@snm=\write8
 \openout8 = `document.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
-
-(./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
+ (./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1570,13 +1660,13 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
- 18201 strings out of 493315
- 327687 string characters out of 6137904
- 421378 words of memory out of 5000000
- 21146 multiletter control sequences out of 15000+600000
+ 18255 strings out of 493315
+ 328496 string characters out of 6137904
+ 420379 words of memory out of 5000000
+ 21182 multiletter control sequences out of 15000+600000
  17153 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,16n,53p,942b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1596,10 +1686,10 @@ al/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local
 exlive/2013/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb>
-Output written on document.pdf (17 pages, 6960084 bytes).
+Output written on document.pdf (23 pages, 8975426 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

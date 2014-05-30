@@ -120,7 +120,7 @@ Total in Netflix Prize\citep{netflix} Dataset:
 \end{frame}
 
 \begin{frame}
-\frametitle{Data presence}
+\frametitle{Data availability}
 \framesubtitle{Sparse matrix visual representation: grayscale}
 \begin{columns}[T] % align columns
 \begin{column}{.48\textwidth}
@@ -286,15 +286,131 @@ stochastic matrix $\mQ_1$ and transition from $V$ to $U$ as $\mQ_2^T$
 \end{eqnarray*}
 \end{column}%
 \end{columns}
-In this setting authority factors $\phi_i$ and $\tau_j$ are essentialy
+
+
+\end{frame}
+\begin{frame}
+\frametitle{The idea behind authority factors}
+\begin{itemize}
+  \item In this setting authority factors $\phi_i$ and $\tau_j$ are essentialy
 stationary probabilities for random walk process defined by
-stohastic matrices $\mQ_1\mQ_2^T$ and $\mQ_1^T\mQ_2$ respectively.
-The algoritm is very similar to one used by Google which assignes PageRank
-authority factor to each web-page in the Internet, as logarithm of stationary
-probability for random walk throw the Internet graph, defined by hyperlinks.
+stohastic matrices $\mQ_1\mQ_2^T$ and $\mQ_1^T\mQ_2$ respectively and can be
+described by following equations:
+ \begin{eqnarray*}
+ \phi = \mQ_1 \tau, \text{ and } \tau = \mQ_2^T \phi.  
+ \end{eqnarray*}
+  \item The algoritm is very similar to one used by Google which assigns
+PageRank authority factor to each web-page in the Internet as logarithm of stationary
+probability for random walk through the Internet graph defined by hyperlinks.
+\end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Data availability}
+\framesubtitle{Densities before and after sorting by authority factors}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{usual_grayscale_0.png}
+\end{figure}
+initial
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{usual_grayscale_5.png}
+\end{figure}
+after 5 iterations
+\end{column}%
+\end{columns}
+\end{frame}
 
+\begin{frame}
+\frametitle{Data availability}
+\framesubtitle{Densities before and after sorting by authority factors}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{usual_0.png}
+\end{figure}
+initial
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{usual_5.png}
+\end{figure}
+after 5 iterations
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Data availability}
+\framesubtitle{Densities before and after sorting by authority factors:
+log-scale}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{log_grayscale_0.png}
+\end{figure}
+initial
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{log_grayscale_5.png}
+\end{figure}
+after 5 iterations
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Data availability}
+\framesubtitle{Densities before and after sorting by authority factors:
+log-scale}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{log_0.png}
+\end{figure}
+initial
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{log_5.png}
+\end{figure}
+after 5 iterations
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Submatrix selection}
+\framesubtitle{}
+\begin{itemize}
+  \item $500 \times 500$ -- upper left corner of data sorted according to
+  authority factors;
+  \item missing ratio -- 7\% (score fill ratio increased from 1.18\% to 93\%).
+\end{itemize}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=3.5cm]{scores_500x500.png}
+\end{figure}
+scores
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=3.5cm]{missing_500x500.png}
+\end{figure}
+missing data (black pixels)
+\end{column}%
+\end{columns}
+\end{frame}
 
 \begin{frame}[allowframebreaks]
 \bibliographystyle{ieeetr}
@@ -308,4 +424,5 @@ probability for random walk throw the Internet graph, defined by hyperlinks.
   \item 
 \end{itemize}
 \end{frame}
+
 \end{document}
