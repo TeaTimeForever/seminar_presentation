@@ -412,6 +412,93 @@ missing data (black pixels)
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{Interpolating missing data}
+\begin{itemize}
+  \item Interpolation aim:
+  \begin{itemize}
+    \item provide solid matrix for singular value decomposition for checking
+    hypothesis about low rank approximation;
+    \item not to predict missing data(!). 
+    \end{itemize}
+    \item Lets denote $I(j) = \{i: \exists y_{ij}\}$ and $J(i) = \{j: \exists
+    y_{ij}\}$.
+    \item Interpolation algorithm:
+    \begin{equation*}
+    \tilde{y_{ij}} = \frac{\sum\limits_{k \in I(j)} y_{kj} + \sum\limits_{k \in J(i)}
+    y_{ik}}{|I(j)| + |J(i)|}. 
+    \end{equation*}
+    \item Patch matrix $\hat{\mY} = \{\hat{y_{ij}} \}$ where
+    \begin{equation*}
+    \hat{y_{ij}} = 
+    \begin{cases} 
+     y_{ij} \text{-- if } y_{ij} \text{is available};\\
+    \tilde{y_{ij}} \text{ -- otherwise};
+    \end{cases}
+    \end{equation*} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Singular Values of matrix $\hat{\mY}$}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd.png}
+\end{figure}
+all values
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd_10.png}
+\end{figure}
+first 10 values
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Singular Values of matrix $\hat{\mY}$: logscale}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd_log.png}
+\end{figure}
+all values
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd_log_10.png}
+\end{figure}
+first 10 values
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dependency $|\hat{\mY} - \tilde{\mY}|_F$ over approximation rank
+$k$}
+
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd.png}
+\end{figure}
+all values
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\begin{figure}[h] 
+    \includegraphics[width=5cm]{svd_10.png}
+\end{figure}
+first 10 values
+\end{column}%
+\end{columns}
+\end{frame}
+
+
 \begin{frame}[allowframebreaks]
 \bibliographystyle{ieeetr}
 \bibliography{references}
